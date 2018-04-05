@@ -46,7 +46,7 @@ rebasing*       (internal use for git-rebase)"
 . git-sh-i18n
 prefix=$(git rev-parse --show-prefix)
 set_reflog_action am
-require_work_tree
+require_work_tree_exists
 cd_to_toplevel
 
 git var GIT_COMMITTER_IDENT >/dev/null ||
